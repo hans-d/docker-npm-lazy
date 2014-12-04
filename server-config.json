@@ -1,0 +1,30 @@
+{
+    "http_port": 80,
+    "https_port": 443,
+    "http_enabled": true,
+    "https_enabled": {{NPMLAZY_HTTPS_ENABLED}},
+    "https_key": "{{NPMLAZY_HTTPS_KEY}}",
+    "https_cert": "{{NPMLAZY_HTTPS_CERT}}",
+
+    "http_proxy": "{{HTTP_PROXY}}",
+    "https_proxy": "{{HTTPS_PROXY}}",
+
+    "real_external_port": {{NPMLAZY_PUBLIC_PORT}},
+    "server_address": "{{NPMLAZY_PUBLIC_HOST}}",
+    "bind_address": "0.0.0.0",
+
+    "log_level": "{{NPMLAZY_LOG}}",
+
+    "package_blacklist": "/data/config/package-blacklist.json",
+    "permit_stale_resources": {{NPMLAZY_OFFLINE}},
+
+    "upstream_host": "{{NPMLAZY_UPSTREAM_HOST}}",
+    "upstream_port": {{NPMLAZY_UPSTREAM_PORT}},
+    "upstream_use_https": {{NPMLAZY_UPSTREAM_USE_HTTPS}},
+    "upstream_verify_ssl": {{NPMLAZY_UPSTREAM_VERIFY_SSL}},
+    "upstream_db_path": "{{NPMLAZY_UPSTREAM_DBPATH}}",
+
+    "cache_expiry": {{NPMLAZY_CACHE_EXPIRY}},
+    "cache_dir": "/data/cache",
+    "cache_mem": {{NPMLAZY_CACHE_INMEM}}
+}
